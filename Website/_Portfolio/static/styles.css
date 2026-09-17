@@ -1,0 +1,145 @@
+@font-face {
+    font-family: Arimo-Regular;
+    src: url(fonts/Arimo-Regular.ttf);
+}
+
+@font-face {
+    font-family: Arimo-Bold;
+    src: url(fonts/Arimo-Bold.ttf);
+}
+
+@font-face {
+    font-family: MarbellaArmy;
+    src: url(fonts/Marbella-Army.otf);
+}
+
+@font-face {
+    font-family: KasaneTeko;
+    src: url(fonts/Teko-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: ComicRelief-Bold;
+    src: url(fonts/ComicRelief-Bold.ttf);
+}
+
+@font-face {
+    font-family: PaletteMosaic-Regular;
+    src: url(fonts/PaletteMosaic-Regular.ttf);
+}
+
+root {
+    --primary-color: #ffffff;
+    --secondary-color: #d3d3d3;
+    --text-color: #000000;
+}
+
+modo_oscuro {
+    --primary-color: #000000;
+    --secondary-color: #3f3f3f; 
+    --text-color: #ffffff;
+}
+
+h1 {
+    font-size: 1000%;
+    padding-bottom: 12px;
+}
+
+h2 {
+    font-size: 550%;
+    padding-bottom: 12px;
+}
+
+h3 {
+    font-size: 425%;
+    padding-bottom: 12px;
+}
+
+p, ul, li {
+    font-family: Arimo-Regular;
+    font-size: 23px;
+}
+
+.row {
+    padding: 12px;
+}
+
+.sectionPrimary {
+    background-color: var(--primary-color);
+}
+
+.sectionSecondary {
+    background-color: var(--secondary-color);
+}
+
+.icono {
+    width: 42px;
+    height: 42px;
+}
+
+.logo {
+    width: 58px;
+    height: 58px;
+}
+
+.skillBox, .logoBox {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 12px;
+    gap: 10px;
+}
+
+.simpleInput {
+    height: 40px;
+    width: 50%;
+}
+
+#bienvenido {
+    font-family: Arimo-Bold;
+    color: var(--text-color);
+}
+
+#sobreMi {
+    font-family: Arimo-Regular;
+    color: black;
+}
+
+#cv {
+    font-size: 15px;
+}
+
+#StrayTowerDefense {
+    font-family: MarbellaArmy;
+    color: red;
+    text-shadow:
+    -1px -1px 0 #000000,
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000; 
+}
+
+#Rogilla {
+    font-family: KasaneTeko;
+    color: #616161;
+    text-shadow:
+    -1px -1px 0 #ffffff,
+    1px -1px 0 #9b9b9b,
+    -1px 1px 0 #9b9b9b,
+    1px 1px 0 #00000000; 
+}
+
+#contactame {
+    font-family: ComicRelief-Bold;
+    color: #0099ff;
+}
+
+#redes {
+    font-family: PaletteMosaic-Regular;
+    color: #FD9F00;
+    text-shadow:
+    -1px -1px 0 #FDDE00,
+    1px -1px 0 #FC6200,
+    -1px 1px 0 #802600,
+    1px 1px 0 #802600; 
+}
+
