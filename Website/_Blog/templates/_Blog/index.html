@@ -1,13 +1,39 @@
 {% extends '_Blog/base.html'%}
 
 {% block title %}
+
     Botolog
+
 {% endblock %}
 
 {% block content %}
    
-    <h1> Hello! </h1>
+    {% for post in posts %}
 
-    <p> This might be a website. </p>
+    <h2>
+        
+        {{ post.shortened_heading }}
+    
+    </h2>
+
+    <p>
+        
+        {{ post.date }} 
+    
+    </p>
+
+    <p>
+
+        {{ post.drophead}} 
+    
+    </p>
+
+    <a href = "{% url 'detail' post.slug %}"> 
+        
+        Leer más 
+
+    </a>
+    
+    {% endfor %}
 
 {% endblock %}

@@ -19,3 +19,14 @@ Por ultimo, con ayuda del profe, integre el portafolio al sitio.
 Comencé perdiendo el tiempo ¯\_(ツ)_/¯. Despues, intrege el blog al sitio. Por ahora solo muestra un mensaje de bienvenida, pero es un buen primer paso.
 
 Hice que puedas acceder al portafolio desde el blog. Aún me falta que se pueda acceder al blog desde el portafolio.
+
+**Miercoles 30 de septiembre:**
+
+nada xd
+
+**Jueves 1 de octubre:**
+
+Cree el primer modelo para manegar los posts. Tambien cree archivos htmls para mostrar los posts y sus contenidos.
+
+Despues de crear el modelo, queria modificar algunos campos para que quedaran a mi gusto, sin embargo Django no me lo permitia. Tuve que borrar la base de datos y comenzar de vuelta.
+

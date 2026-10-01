@@ -1,0 +1,41 @@
+{% extends '_Blog/base.html'%}
+
+{% block title %}
+
+    {{ post.shortened_heading }}
+
+{% endblock %}
+
+{% block content %}
+
+    <h1> 
+
+        {{ post.heading }}
+
+    </h1>
+
+    <p>
+        
+        {{ post.date }}
+    
+    </p>
+
+    <p>
+        
+        {{ post.drophead }}
+    
+    </p>
+
+    <p>
+        
+        {{ post.content }}
+    
+    </p>
+
+    <a href = "{% url 'index' %}"> 
+        
+        Volver a inicio 
+    
+    </a>
+
+{% endblock %}
