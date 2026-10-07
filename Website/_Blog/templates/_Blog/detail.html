@@ -24,22 +24,30 @@
         
     </header>
 
-    <p class = 'overshadow drophead'>
-        
-        {{ post.drophead }}
-    
-    </p>
+    <summary>
 
-    <p class = 'content'>
+        <p class = 'overshadow drophead'>
+            
+            {{ post.drophead }}
         
-        {{ post.content }}
-    
-    </p>
+        </p>
 
-    <a href = "{% url 'index' %}"> 
+    </summary>
+
+    <main>
+
+        <p class = 'highlight content'>
+            
+            {{ post.content }}
         
-        Volver a inicio 
-    
-    </a>
+        </p>
+
+        <a href = '{% url "index" %}'>
+            
+            Volver a inicio 
+        
+        </a>
+
+    </main>
 
 {% endblock %}

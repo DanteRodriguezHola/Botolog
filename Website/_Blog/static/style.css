@@ -8,23 +8,40 @@ html {
     color: #ffffff;
 }
 
-.main {
+.container-navegation {
     padding: 4px;
+
+    margin: 12px;
 
     border: 6px;
     border-radius: 15px;
-    border-color: #1f1f1fc4;
+
+    background-color: #000000c4;
+}
+
+.container-posts {
+    padding: 4px;
+
+    margin: 12px;
+
+    border: 6px;
+    border-radius: 15px;
 
     background-color: #1f1f1fc4;
 }
 
-.highlight {
-    font-family: sans-serif;
+header, summary, main {
+    margin: 6px;
 }
 
+.highlight {
+    opacity: 0.8;
+}
 
 .highlight.heading {
-    display: inline-block;    
+    font-family: sans-serif;
+
+    display: inline; 
 }
 
 h1.highlight.heading {
@@ -35,30 +52,26 @@ h2.highlight.heading {
     font-size: 2em;
 }
 
+.highlight.content {
+    font-size: 1.2em;
+}
+
+a{
+    background: linear-gradient(to right, #ff0000, #ffa500, #ffff00, #00ff00, #0000ff, #8000ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .overshadow {
     opacity: 0.5;
 }
 
 .overshadow.date {
-    display: inline-block;
+    display: inline;
 
-    font-size: 1.2em;
-}
-
-.overshadow.date.smaller {
-    font-size: 1.1em;
+    font-size: 1sem;
 }
 
 .overshadow.drophead {
-    font-size: 1.2em;
-}
-
-.overshadow.drophead.smaller {
-    font-size: 1.1em;
-}
-
-.content {
-    font-size: 1.4em;
-
-    opacity: 0.8;
+    font-size: 1em;
 }

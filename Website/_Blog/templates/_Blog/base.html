@@ -22,19 +22,21 @@
         
     <body>
 
-        <nav>
+        <nav class = 'container-navegation'>
 
-            <a href = "/"> Home </a>
+            {% block navegation %}
+
+            {% endblock %}
 
         </nav>
 
-        <main>
+        <div class = 'container-posts'>
 
             {% block content %}
 
             {% endblock %}
 
-        </main>
+        </div>
 
     </body>
 

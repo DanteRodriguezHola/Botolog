@@ -35,3 +35,8 @@ Despues de crear el modelo, queria modificar algunos campos para que quedaran a 
 Me dedique a hacer el css del blog. Aún no esta completo, pero ya va quedando como me gusta. 
 
 Fue un proceso bastante complicado ya que, por alguna razon, no podia integrar el css usando 'static'. Para no perder tanto tiempo, decidi diseñar el css en otra pagina.
+
+**Miercoles 7 de octubre:**
+
+Comencé modificando un poco el css del blog (utilice la hora de Lengua para esto, no me rete profe :[). Logre implementar un fondo para el contenido del post y integrado una barra de navegación, aunque todavia esta incompleta.
+

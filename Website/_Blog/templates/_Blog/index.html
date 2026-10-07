@@ -6,42 +6,70 @@
 
 {% endblock %}
 
+{% block navegation %}
+
+    <ul>
+
+        {% for post in posts %}
+
+        <li>
+
+            <a href = '{% url "detail" post.slug %}'
+            target = '_self'>
+
+                {{ post.shortened_heading }}
+
+            </a>
+
+        </li>
+
+        {% endfor %}
+
+    </ul>
+
+{% endblock %}
+
 {% block content %}
    
-    {% for post in posts %}
+    <main>
 
-    <article>
+        {% for post in posts %}
 
-        <header>
+        <article>
 
-            <h2 class = 'highlight heading'>
+            <header>
+
+                <h2 class = 'highlight heading'>
+                    
+                    {{ post.shortened_heading }}
                 
-                {{ post.shortened_heading }}
-            
-            </h2>
+                </h2>
 
-            <p class = 'overshadow date smaller'>
+                <p class = 'overshadow date'>
+                    
+                    [{{ post.date }}]
                 
-                [{{ post.date }}]
+                </p>
+
+            </header>
+
+            <p class = 'overshadow drophead'>
+
+                {{ post.drophead}} 
             
             </p>
 
-        </header>
+            <a href = '{% url "detail" post.slug %}'
+            target = '_self'> 
+                
+                Leer más 
 
-        <p class = 'overshadow drophead smaller'>
+            </a>
 
-            {{ post.drophead}} 
-        
-        </p>
+        </article>
 
-        <a href = "{% url 'detail' post.slug %}"> 
-            
-            Leer más 
+        {% endfor %}
 
-        </a>
-
-    </article>
-
-    {% endfor %}
+    </main>
 
 {% endblock %}
