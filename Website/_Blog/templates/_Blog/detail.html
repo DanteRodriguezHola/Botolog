@@ -44,7 +44,7 @@
 
     </main>
 
-    <aside>
+    <aside class = 'container-comments'>
 
         <form method = 'post'
         Waction = '.'>
@@ -63,17 +63,18 @@
 
         {% for comment in post.comments.all %}
 
-            <h2>
-            
-                {{ comment.user }} [{{ comment.date }}]
-            
-            </h2>
+        <div>
 
-            <p>
+            <p class = 'highlight comment'>
 
-                {{ comment.content }}
+                {{ comment.content }} - <strong> {{ comment.user }} </strong> <span class = 'overshadow date'> [{{ comment.date }}] </span>
 
             </p>
+
+
+                
+        
+        </div>
         
         {% endfor %}
 
