@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 
+from .forms import CommentForm
 from .models import Post
 
 def index(request):
@@ -11,6 +12,20 @@ def index(request):
 def detail(request, slug):
     post = get_object_or_404(Post, slug = slug)
 
+    if request.method == 'POST':
+        form = CommentForm(request.POST)
+
+        if form.is_valid():
+            comment = form.save(commit = False)
+            comment.post = post
+            comment.save()
+
+            return redirect('detail', slug = slug)
+
+    else:
+        form = CommentForm
+
     return render(request, '_Blog/detail.html', {
-        'post': post
+        'post': post,
+        'form': form
     })

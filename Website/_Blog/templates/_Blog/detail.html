@@ -42,12 +42,50 @@
         
         </p>
 
+    </main>
+
+    <aside>
+        
+        <form>
+
+            {% csrf_token %}
+
+            {{ form.as_p }}
+
+            <button>
+
+                Enviar
+
+            </button>
+
+        </form>
+
+        {% for comment in post.comments.all %}
+
+            <h2>
+            
+                {{ comment.user }} [{{ comment.date }}]
+            
+            </h2>
+
+            <p>
+
+                {{ comment.content }}
+
+            </p>
+        
+        {% endfor %}
+
+    </aside>
+
+    <footer>
+
         <a href = '{% url "index" %}'>
             
             Volver a inicio 
         
         </a>
 
-    </main>
+    </footer>
 
 {% endblock %}
