@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 
 from .forms import CommentForm
 from .models import Post
@@ -23,7 +23,7 @@ def detail(request, slug):
             return redirect('detail', slug = slug)
 
     else:
-        form = CommentForm
+        form = CommentForm()
 
     return render(request, '_Blog/detail.html', {
         'post': post,
