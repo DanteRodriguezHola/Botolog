@@ -1,0 +1,59 @@
+html {
+    background-image: url('background.png');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+main {
+    padding: 4px;
+
+    border: 6px;
+    border-radius: 15px;
+    border-color: #1f1f1fc4;
+
+    background-color: #1f1f1fc4;
+}
+
+.heading {
+    margin: 6px;
+
+    font-family: sans-serif;
+    font-size: 3em;
+    color: #ffffff;
+
+    display: inline-block;
+    
+    opacity: 0.8;
+}
+
+.date {
+    margin: 6px;
+
+    font-family: monospace;
+    font-size: 1.1em;
+    color: #ffffff;
+
+    display: inline-block;
+
+    opacity: 0.5;
+}
+.drophead {
+    margin: 6px;
+
+    font-family: monospace;
+    font-size: 1.1em;
+    color: #ffffff;
+
+    opacity: 0.5;
+}
+
+.content {
+    margin: 6px;
+
+    font-family: monospace;
+    font-size: 1.3em;
+    color: #ffffff;
+
+    opacity: 0.8;
+}

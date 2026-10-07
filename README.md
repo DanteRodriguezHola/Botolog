@@ -30,3 +30,8 @@ Cree el primer modelo para manegar los posts. Tambien cree archivos htmls para m
 
 Despues de crear el modelo, queria modificar algunos campos para que quedaran a mi gusto, sin embargo Django no me lo permitia. Tuve que borrar la base de datos y comenzar de vuelta.
 
+**Martes 6 de octubre:**
+
+Me dedique a hacer el css del blog. Aún no esta completo, pero ya va quedando como me gusta. 
+
+Fue un proceso bastante complicado ya que, por alguna razon, no podia integrar el css usando 'static'. Para no perder tanto tiempo, decidi diseñar el css en otra pagina.
