@@ -8,19 +8,23 @@
 
 {% block content %}
 
-    <h1 class = 'heading'> 
+    <header>
 
-        {{ post.heading }}
+        <h1 class = 'highlight heading'> 
 
-    </h1>
+            {{ post.heading }}
 
-    <p class = 'date'>
+        </h1>
+
+        <p class = 'overshadow date'>
+            
+            [{{ post.date }}]
         
-        {{ post.date }}
-    
-    </p>
+        </p>
+        
+    </header>
 
-    <p class = 'drophead'>
+    <p class = 'overshadow drophead'>
         
         {{ post.drophead }}
     

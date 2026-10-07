@@ -3,9 +3,12 @@ html {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+
+    font-family: monospace;
+    color: #ffffff;
 }
 
-main {
+.main {
     padding: 4px;
 
     border: 6px;
@@ -15,45 +18,47 @@ main {
     background-color: #1f1f1fc4;
 }
 
-.heading {
-    margin: 6px;
-
+.highlight {
     font-family: sans-serif;
-    font-size: 3em;
-    color: #ffffff;
-
-    display: inline-block;
-    
-    opacity: 0.8;
 }
 
-.date {
-    margin: 6px;
 
-    font-family: monospace;
-    font-size: 1.1em;
-    color: #ffffff;
+.highlight.heading {
+    display: inline-block;    
+}
 
-    display: inline-block;
+h1.highlight.heading {
+    font-size: 2.4em;
+}
 
+h2.highlight.heading {
+    font-size: 2em;
+}
+
+.overshadow {
     opacity: 0.5;
 }
-.drophead {
-    margin: 6px;
 
-    font-family: monospace;
+.overshadow.date {
+    display: inline-block;
+
+    font-size: 1.2em;
+}
+
+.overshadow.date.smaller {
     font-size: 1.1em;
-    color: #ffffff;
+}
 
-    opacity: 0.5;
+.overshadow.drophead {
+    font-size: 1.2em;
+}
+
+.overshadow.drophead.smaller {
+    font-size: 1.1em;
 }
 
 .content {
-    margin: 6px;
-
-    font-family: monospace;
-    font-size: 1.3em;
-    color: #ffffff;
+    font-size: 1.4em;
 
     opacity: 0.8;
 }

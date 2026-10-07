@@ -10,30 +10,38 @@
    
     {% for post in posts %}
 
-    <h2 class = 'heading'>
+    <article>
+
+        <header>
+
+            <h2 class = 'highlight heading'>
+                
+                {{ post.shortened_heading }}
+            
+            </h2>
+
+            <p class = 'overshadow date smaller'>
+                
+                [{{ post.date }}]
+            
+            </p>
+
+        </header>
+
+        <p class = 'overshadow drophead smaller'>
+
+            {{ post.drophead}} 
         
-        {{ post.shortened_heading }}
-    
-    </h2>
+        </p>
 
-    <p class = 'date'>
-        
-        {{ post.date }} 
-    
-    </p>
+        <a href = "{% url 'detail' post.slug %}"> 
+            
+            Leer más 
 
-    <p class = 'content'>
+        </a>
 
-        {{ post.drophead}} 
-    
-    </p>
+    </article>
 
-    <a href = "{% url 'detail' post.slug %}"> 
-        
-        Leer más 
-
-    </a>
-    
     {% endfor %}
 
 {% endblock %}
