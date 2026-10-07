@@ -91,6 +91,8 @@ a {
     background: linear-gradient(to right, #ff0000, #ffa500, #ffff00, #00ff00, #0000ff, #8000ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    font-size: 1.2em;
 }
 
 strong {
