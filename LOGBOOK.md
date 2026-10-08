@@ -39,3 +39,12 @@ Comencé modificando un poco el css del blog (utilice la hora de Lengua para est
 Quería hacer diferentes templates para mostrar blogs por año y por mes, pero cuando lo intente era muy complicado, asi que o dejare para el final.
 
 Además, tambien moví esta bitacora a un archivo separado (gracias profe por avisar que se escribe por separa el dia antes de entragar >:[)
+
+**Jueves 8 de octubre:**
+
+Mejore el css para que el blog se vea aún más lindo.
+
+Trabaje en la barra de navegación, que permite volver al portafolio y al inicio del blog (si estas en un post). Lo malo es que se mueve al hacer scroll, lo que puede ser molesto.
+
+Logre linkear el portafolio al blog finalmente. Eso sí, al hacerlo, tuve que añadir 'blog' a cada url del mismo, ya que tiraba error el maldito.
+
