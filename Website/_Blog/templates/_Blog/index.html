@@ -8,36 +8,21 @@
 
 {% block navegation %}
 
-    <ul>
+    {% for post in posts %}
 
-        <li>
+    <li>
 
-            <a href = '{% url "portfolio:index" %}'
-            target = '_self'>
+        <a href = '{% url "detail" post.slug %}'
+        target = '_self'>
 
-                <strong> Home </strong>
+            {{ post.shortened_heading }}
 
-            </a>
+        </a>
 
-        </li>
+    </li>
 
-        {% for post in posts %}
-
-        <li>
-
-            <a href = '{% url "detail" post.slug %}'
-            target = '_self'>
-
-                {{ post.shortened_heading }}
-
-            </a>
-
-        </li>
-
-        {% endfor %}
-
-    </ul>
-
+    {% endfor %}
+    
 {% endblock %}
 
 {% block content %}

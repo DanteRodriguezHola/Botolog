@@ -20,13 +20,29 @@
 
     </head>
         
-    <body>
+    <body class = 'basket all'>
 
         <nav class = 'basket navegation'>
 
-            {% block navegation %}
+            <ul>
 
-            {% endblock %}
+                <li>
+
+                    <a href = '{% url "portfolio:index" %}'
+                    target = '_self'>
+
+                        <strong> Home </strong>
+
+                    </a>
+
+                </li>
+
+                {% block navegation %}
+
+                {% endblock %}
+
+            </ul>
+            
 
         </nav>
 
