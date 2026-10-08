@@ -10,13 +10,13 @@
 
     <header>
 
-        <h1 class = 'highlight heading'> 
+        <h1 class = 'highlight-text heading'> 
 
             {{ post.heading }}
 
         </h1>
 
-        <p class = 'overshadow date'>
+        <p class = 'overshadow-text date'>
             
             [{{ post.date }}]
         
@@ -26,7 +26,7 @@
 
     <summary>
 
-        <p class = 'overshadow drophead'>
+        <p class = 'overshadow-text drophead'>
             
             {{ post.drophead }}
         
@@ -36,7 +36,7 @@
 
     <main>
 
-        <p class = 'highlight content'>
+        <p class = 'highlight-text'>
             
             {{ post.content }}
         
@@ -44,7 +44,13 @@
 
     </main>
 
-    <aside class = 'container-comments'>
+    <aside class = 'basket comments'>
+
+        <h2 class = 'highlight-text heading'>
+
+            Comentarios
+
+        </h2>
 
         <form method = 'post'
         Waction = '.'>
