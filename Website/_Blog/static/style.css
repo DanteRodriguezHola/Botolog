@@ -17,7 +17,7 @@ html {
     border-radius: 15px;
 }
 
-.basket.all{
+.basket.all {
     display: grid;
 
     grid-template-areas: 'navegation posts';
@@ -60,6 +60,10 @@ h2.heading {
     font-size: 2em;
 }
 
+.navegation-links {
+    list-style-type: none;
+}
+
 .date {
     font-size: 1em;
 
@@ -70,37 +74,45 @@ h2.heading {
     font-size: 1em;
 }
 
-.form
-label {
+.form {
+    padding: 12px;
+
+    border: 6px;
+    border-radius: 15px;
+
+    margin: 0px;
+
+    background-color: #0f0f0fc4;
+
     display: block;
+
+    color: #ffffff;
+    
+    cursor: text;
 }
 
-input[type = text], textarea, select {
-  width: 100%;
-
-  padding: 12px;
-
-  margin: 8px 0;
-
-  border: 6px;
-  border-radius: 15px;
-
-  background-color: #0f0f0fc4;
-
-  display: inline-block;
-  
-  box-sizing: border-box;
+.form.short {
+    width: 20%;
 }
 
-button {
-  width: 100%;
-  background: linear-gradient(to right, #ff0000, #ffa500, #ffff00, #00ff00, #00a5ff, #8000ff);
-  color: #000000;
-  padding: 14px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
+.form.long {
+    width: 97%;
+}
+
+.form.short.submit {
+    background: linear-gradient(to right, #ff0000, #ffa500, #ffff00, #00ff00, #00a5ff, #8000ff);
+    
+    color: #000000;
+    
+    cursor: pointer;
+}
+
+label {
+    margin: 6px;
+
+    display: inline-block;
+
+    opacity: 0.5;   
 }
 
 .username {
@@ -108,12 +120,12 @@ button {
 }
 
 a {
+    font-size: 1.2em;
+    font-style: oblique;
+
     background: linear-gradient(to right, #ff0000, #ffa500, #ffff00, #00ff00, #00a5ff, #8000ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
-    font-size: 1.2em;
-    font-style: oblique;
 }
 
 strong {

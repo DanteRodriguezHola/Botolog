@@ -6,6 +6,47 @@
 
 {% endblock %}
 
+{% block navegation %}
+
+    <li>
+
+        <a href = '{% url "portfolio:index" %}'
+        target = '_self'>
+
+            <strong> Volver al inicio </strong>
+
+        </a>
+
+    </li>
+
+    <li>
+
+        <a href = '{% url "index" %}'
+        target = '_self'>
+
+            <strong> Ver todos los posts </strong>
+
+        </a>
+
+    </li>
+
+    {% for post in posts %}
+
+    <li>
+
+        <a href = '{% url "detail" post.slug %}'
+        target = '_self'>
+
+            {{ post.shortened_heading }}
+
+        </a>
+
+    </li>
+
+    {% endfor %}
+    
+{% endblock %}
+
 {% block content %}
 
     <header>
@@ -46,30 +87,34 @@
 
     <aside class = 'basket comments'>
 
-        <h2 class = 'highlight-text heading'>
+        <div class = 'basket forms'>
 
-            Comentarios
+            <h2 class = 'highlight-text heading'>
 
-        </h2>
+                Comentarios
 
-        <form method = 'post'
-        Waction = '.'>
+            </h2>
 
-            {% csrf_token %}
+            <form method = 'post'
+            Waction = '.'>
 
-            {{ form.as_p }}
+                {% csrf_token %}
 
-            <button>
+                {{ form.as_p }}
 
-                Enviar
+                <button class = 'form short submit'>
 
-            </button>
+                    Enviar
 
-        </form>
+                </button>
+
+            </form>
+
+        </div>
 
         {% for comment in post.comments.all %}
 
-        <div>
+        <div class = 'basket comments'>
 
             <p class = 'highlight-text username'>
                 

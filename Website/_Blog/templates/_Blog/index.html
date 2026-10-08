@@ -8,6 +8,17 @@
 
 {% block navegation %}
 
+    <li>
+
+        <a href = '{% url "portfolio:index" %}'
+        target = '_self'>
+
+            <strong> Volver al inicio </strong>
+
+        </a>
+
+    </li>
+
     {% for post in posts %}
 
     <li>
@@ -49,7 +60,7 @@
 
             </header>
 
-            <p class = 'overshadow drophead'>
+            <p class = 'overshadow-text drophead'>
 
                 {{ post.drophead}} 
             
