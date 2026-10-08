@@ -13,7 +13,7 @@
         <a href = '{% url "portfolio:index" %}'
         target = '_self'>
 
-            <strong> Volver al inicio </strong>
+            <strong> Volver al portafolio </strong>
 
         </a>
 
@@ -39,6 +39,12 @@
 {% block content %}
    
     <main>
+
+        <h1 class = 'heading logo'> 
+
+            Botolog 
+        
+        </h1>
 
         {% for post in posts %}
 

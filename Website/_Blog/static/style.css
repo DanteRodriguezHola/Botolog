@@ -52,6 +52,15 @@ html {
     font-family: sans-serif;
 }
 
+.heading.logo {
+    margin: 12px;
+    display: block;
+
+    justify-self: center;
+
+    font-size: 4em;
+}
+
 h1.heading {
     font-size: 2.4em;
 }
