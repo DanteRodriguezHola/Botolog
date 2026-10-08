@@ -71,11 +71,23 @@
 
         <div>
 
-            <p class = 'highlight comment'>
+            <p class = 'highlight-text username'>
+                
+                <strong> {{ comment.user }}: </strong>
 
-                {{ comment.content }} - <strong> {{ comment.user }} </strong> <span class = 'overshadow date'> [{{ comment.date }}] </span>
+            </p>
+            
+            <p class = 'overshadow-text date'>
 
-            </p>      
+                [{{ comment.date }}]
+
+            </p>
+
+            <p class = 'highlight-text'>
+
+                {{ comment.content }}
+
+            </p>
         
         </div>
         

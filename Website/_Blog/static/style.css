@@ -1,5 +1,5 @@
 html {
-    background-image: url('images/background.png');
+    background-image: url('background.png');
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -18,21 +18,28 @@ html {
 }
 
 .basket.navegation {
+    width: 20%;
+    height: 100%;
+
+    display: block;
+    position: fixed;
+    overflow: auto;
+
     background-color: #000000c4;
 }
 
 .basket.posts {
+    width: 60%;
+    height: 100%;
+
+    display: block;
+    unicode-bidi: isolate;
+
     background-color: #1f1f1fc4;
 }
 
 .basket.comments {
     background-color: #4c4c4c3c;
-}
-
-.highlight.comment {
-    display: block;
-
-    font-size: 1.2em;
 }
 
 .highlight-text {
@@ -65,6 +72,43 @@ h2.heading {
 
 .drophead {
     font-size: 1em;
+}
+
+.form
+label {
+    display: block;
+}
+
+input[type = text], textarea, select {
+  width: 100%;
+
+  padding: 12px;
+
+  margin: 8px 0;
+
+  border: 6px;
+  border-radius: 15px;
+
+  background-color: #0f0f0fc4;
+
+  display: inline-block;
+  
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  background: linear-gradient(to right, #ff0000, #ffa500, #ffff00, #00ff00, #00a5ff, #8000ff);
+  color: #000000;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.username {
+    display: inline;
 }
 
 a {
