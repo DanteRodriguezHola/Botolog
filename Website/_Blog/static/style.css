@@ -1,11 +1,16 @@
+:root {
+    --text-color-main: #ffffff;
+    --text-color-secondary: #9b9b9b;
+}
+
 html {
-    background-image: url('background.png');
+    background-image: url('images/background.png');
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
 
     font-family: monospace;
-    color: #ffffff;
+    color: var(--text-color-main);
 }
 
 .basket {
@@ -25,8 +30,6 @@ html {
 }
 
 .basket.navegation {
-    position: sticky;
-
     background-color: #0f0f0fc4;
 }
 
@@ -36,14 +39,6 @@ html {
 
 .basket.comments {
     background-color: #4c4c4c3c;
-}
-
-.highlight-text {
-    opacity: 0.8;
-}
-
-.overshadow-text {
-    opacity: 0.5;
 }
 
 .heading {
@@ -77,10 +72,14 @@ h2.heading {
     font-size: 1em;
 
     display: inline;
+
+    color: var(--text-color-secondary);
 }
 
 .drophead {
     font-size: 1em;
+
+    color: var(--text-color-secondary);
 }
 
 .form {
@@ -130,11 +129,16 @@ label {
 
 a {
     font-size: 1.2em;
-    font-style: oblique;
+    font-weight: bold;
+    text-decoration: solid;
 
     background: linear-gradient(to right, #ff0000, #ffa500, #ffff00, #00ff00, #00a5ff, #8000ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 strong {
