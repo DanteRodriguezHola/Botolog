@@ -3,8 +3,13 @@
     --text-color-secondary: #9b9b9b;
 }
 
+@font-face {
+    font-family: Jersey25;
+    src: url(fonts/Jersey25.ttf);
+}
+
 html {
-    background-image: url('images/background.png');
+    background-image: url(images/background.png);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -44,14 +49,15 @@ html {
 .heading {
     display: inline;
 
-    font-family: sans-serif;
+    font-family: Jersey25;
+    letter-spacing: 2px;
 }
 
 .heading.logo {
     margin: 12px;
     display: block;
 
-    justify-self: center;
+    text-align: center;
 
     font-size: 4em;
 }

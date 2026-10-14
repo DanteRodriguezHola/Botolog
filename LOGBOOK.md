@@ -48,3 +48,30 @@ Trabaje en la barra de navegación, que permite volver al portafolio y al inicio
 
 Logre linkear el portafolio al blog finalmente. Eso sí, al hacerlo, tuve que añadir 'blog' a cada url del mismo, ya que tiraba error el maldito.
 
+**Lunes 13 de octubre:**
+
+Sabiendo que vamos a presentar nuestros sitios web en la ExpoHuergo de este año, quiero mejorar lo más posible la mía. Si, como esta ahora esta más que decente, pero no es suficiente.
+
+Dicho esto, voy a dejar una pequeña lista de las cosas más importantes que tengo que hacer para mi yo del futuro:
+
+- [ ] Barra de navegación fija.
+- [ ] Repositorios por años y meses.
+- [ ] Miniaturas para los posts.
+- [ ] Texto estructurado en los posts.
+- [ ] Index con bienvenida al usuario.
+
+Y tambien una lista con estupideces que me gustaría agregar, aunque no sean tan urgentes:
+
+- [ ] Imágenes random en la barra de navegación.
+- [ ] ¿Tags?
+
+Dejando de lado las listas de tareas, este día me dedique a cambiar un poquito el css. Lo más destacable que hice fueron definir con variables colores para los textos según su importancia y cambiar la tipografía del logo y los headings. Para lo ultimo, tuve que ojear un buen rato por Google Fonts, ya que las tipografías que elegia no me convencian de todo.
+
+*Tipografias que probe*
+
+- Press Start 2P
+- Geist Pixel
+- Coral Pixels
+- Handjet
+
+Al final, me decidi optar por una llamada Jersey 25.
