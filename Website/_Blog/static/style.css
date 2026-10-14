@@ -1,6 +1,14 @@
 :root {
+    --basket-color-main: #1f1f1fab;
+    --basket-color-secondary: #292929ab;
+    --basket-color-aside: #0a0a0aab;
+    
+
     --text-color-main: #ffffff;
     --text-color-secondary: #9b9b9b;
+    
+    
+    --rainbow: linear-gradient(to right, #ff0000, #ffa500, #ffff00, #00ff00, #00a5ff, #8000ff);
 }
 
 @font-face {
@@ -18,7 +26,7 @@ html {
     color: var(--text-color-main);
 }
 
-.basket {
+.basket, .self-basket {
     padding: 6px;
 
     margin: 10px;
@@ -34,32 +42,41 @@ html {
     grid-template-columns: 1fr 3fr;
 }
 
-.basket.navegation {
-    background-color: #0f0f0fc4;
+.basket.navegation, .self-basket.comment  {
+    background-color: var(--basket-color-aside);
 }
 
 .basket.posts {
-    background-color: #1f1f1fc4;
+    background-color: var(--basket-color-main)
 }
 
 .basket.comments {
-    background-color: #4c4c4c3c;
+    background-color: var(--basket-color-secondary)
 }
 
-.heading {
-    display: inline;
+article {
+    margin-bottom: 24px;
+}
 
+header, p {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.heading, .logo {
     font-family: Jersey25;
     letter-spacing: 2px;
 }
 
-.heading.logo {
-    margin: 12px;
-    display: block;
 
-    text-align: center;
-
+.logo {
     font-size: 4em;
+    text-align: center;
+}
+
+.heading {
+    display: inline;
+    
 }
 
 h1.heading {
@@ -74,18 +91,14 @@ h2.heading {
     list-style-type: none;
 }
 
-.date {
+.drophead, .date {
     font-size: 1em;
-
-    display: inline;
 
     color: var(--text-color-secondary);
 }
 
-.drophead {
-    font-size: 1em;
-
-    color: var(--text-color-secondary);
+.date {
+    display: inline;
 }
 
 .form {
@@ -114,7 +127,7 @@ h2.heading {
 }
 
 .form.short.submit {
-    background: linear-gradient(to right, #ff0000, #ffa500, #ffff00, #00ff00, #00a5ff, #8000ff);
+    background: var(--rainbow);
     
     color: #000000;
     
@@ -138,15 +151,11 @@ a {
     font-weight: bold;
     text-decoration: solid;
 
-    background: linear-gradient(to right, #ff0000, #ffa500, #ffff00, #00ff00, #00a5ff, #8000ff);
+    background: var(--rainbow);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 a:hover {
     text-decoration: underline;
-}
-
-strong {
-    font-weight: bold;
 }

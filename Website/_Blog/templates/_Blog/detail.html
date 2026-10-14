@@ -13,7 +13,7 @@
         <a href = '{% url "portfolio:index" %}'
         target = '_self'>
 
-            <strong> Volver al portafolio </strong>
+            Volver al portafolio
 
         </a>
 
@@ -24,7 +24,7 @@
         <a href = '{% url "blog:index" %}'
         target = '_self'>
 
-            <strong> Volver al inicio </strong>
+            Volver al inicio
 
         </a>
 
@@ -114,7 +114,7 @@
 
         {% for comment in post.comments.all %}
 
-        <div class = 'basket comments'>
+        <div class = 'self-basket comment'>
 
             <p class = 'username'>
                 
